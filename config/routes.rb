@@ -1,4 +1,6 @@
 Searchingforpoetry::Application.routes.draw do
+  get "pages/shebeingbrand"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
