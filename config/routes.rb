@@ -1,4 +1,5 @@
 Searchingforpoetry::Application.routes.draw do
+  get "pages/home"
   get "pages/shebeingbrand"
 
   # The priority is based upon order of creation:
