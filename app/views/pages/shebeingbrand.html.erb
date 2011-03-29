@@ -1,2 +1,87 @@
-<h1>Pages#shebeingbrand</h1>
-<p>Find me in app/views/pages/shebeingbrand.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Searching For Poetry | she being Brand</title>
+	<style type="text/css">
+	* {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#frame {
+		position: absolute;
+		border-width: 0px;
+		height: 100%;
+		width: 100%;
+	}
+	</style>
+	<script type="text/javascript">
+	
+		
+		var sites = ["http://www.google.com/search?hl=en&source=hp&q=she being Brand",
+					"http://www.google.com/search?hl=en&source=hp&q=-new;and you",
+					"http://www.google.com/search?hl=en&source=hp&q=know consequently a",
+					"http://www.google.com/search?hl=en&source=hp&q=little stiff i was",
+					"http://www.google.com/search?hl=en&source=hp&q=careful of her and(having",
+					"http://www.google.com/search?hl=en&source=hp&q=thoroughly oiled the universal",
+					"http://www.google.com/search?hl=en&source=hp&q=joint tested my gas felt of",
+					"http://www.google.com/search?hl=en&source=hp&q=her radiator made sure her springs were O.",
+					"http://www.google.com/search?hl=en&source=hp&q=K.)i went right to it flooded-the-carburetor cranked her",
+					"http://www.google.com/search?hl=en&source=hp&q=up,slipped the",
+					"http://www.google.com/search?hl=en&source=hp&q=clutch(and then somehow got into reverse she",
+					"http://www.google.com/search?hl=en&source=hp&q=kicked what",
+					"http://www.google.com/search?hl=en&source=hp&q=the hell)next",
+					"http://www.google.com/search?hl=en&source=hp&q=minute i was back in neutral tried and",
+					"http://www.google.com/search?hl=en&source=hp&q=again slo-wly;bare,ly nudg.  ing(my",
+					"http://www.google.com/search?hl=en&source=hp&q=lev-er Right-",
+					"http://www.google.com/search?hl=en&source=hp&q=oh and her gears being in",
+					"http://www.google.com/search?hl=en&source=hp&q=A 1 shape passed",
+					"http://www.google.com/search?hl=en&source=hp&q=from low through",
+					"http://www.google.com/search?hl=en&source=hp&q=second-in-to-high like",
+					"http://www.google.com/search?hl=en&source=hp&q=greasedlightning)just as we turned the corner of Divinity",
+					"http://www.google.com/search?hl=en&source=hp&q=avenue i touched the accelerator and give",
+					"http://www.google.com/search?hl=en&source=hp&q=her the juice,good",
+					"http://www.google.com/search?hl=en&source=hp&q=(it",
+					"http://www.google.com/search?hl=en&source=hp&q=was the first ride and believe i we was",
+					"http://www.google.com/search?hl=en&source=hp&q=happy to see how nice she acted right up to",
+					"http://www.google.com/search?hl=en&source=hp&q=the last minute coming back down by the Public",
+					"http://www.google.com/search?hl=en&source=hp&q=Gardens i slammed on",
+					"http://www.google.com/search?hl=en&source=hp&q=the",
+					"http://www.google.com/search?hl=en&source=hp&q=internalexpanding",
+					"http://www.google.com/search?hl=en&source=hp&q=and",
+					"http://www.google.com/search?hl=en&source=hp&q=externalcontracting",
+					"http://www.google.com/search?hl=en&source=hp&q=brakes Bothatonce and",
+					"http://www.google.com/search?hl=en&source=hp&q=brought allofher tremB",
+					"http://www.google.com/search?hl=en&source=hp&q=-ling",
+					"http://www.google.com/search?hl=en&source=hp&q=to a:dead.",
+					"http://www.google.com/search?hl=en&source=hp&q=stand-",
+					"http://www.google.com/search?hl=en&source=hp&q=;Still)"];
+					
+		var i = 0;
+		var intervalID;
+		
+		function init() {
+			intervalID = setInterval("redirect()", 5000);
+		}
+		
+		function redirect() {
+			document.getElementById('frame').src = sites[i];
+			if(i == (sites.length - 1)) {
+				i=0;
+			} else {
+				i++;
+			}
+		}
+	
+	</script>
+
+  </head>
+
+  <body onload="init();">
+  
+  <div>
+  	<iframe id="frame" scrolling="no"></iframe>
+  </div>
+  
+  </body>
+</html>
