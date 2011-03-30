@@ -16,6 +16,11 @@ header img {
 	background: #fff;
 }
 
+header h1 {
+	margin-top:150px;
+	color:#ff0;
+	font-size:54px;
+}
 section {
 	margin-top: 1em;
 	font-size: 120%;
