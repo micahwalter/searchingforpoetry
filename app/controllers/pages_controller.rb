@@ -4,5 +4,8 @@ class PagesController < ApplicationController
   
   def shebeingbrand
   end
+  
+  def theredwheelbarrow
+  end
 
 end
