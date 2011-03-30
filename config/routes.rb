@@ -1,7 +1,8 @@
 Searchingforpoetry::Application.routes.draw do
-  get "pages/home"
-  get "pages/shebeingbrand"
-
+  root :to => "pages#home"
+  
+  match '/shebeingbrand', :to => 'pages#shebeingbrand'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
