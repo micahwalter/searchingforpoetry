@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Searching For Poetry | The Red Wheelbarrow</title>
+    
+	<style type="text/css">
+	* {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#frame {
+		position: absolute;
+		border-width: 0px;
+		height: 100%;
+		width: 100%;
+	}
+	</style>
+	<script type="text/javascript">
+	
+		
+		var sites = ["http://www.google.com/search?q=so much depends",
+		"http://www.google.com/search?q=upon",
+		"http://www.google.com/search?q=a red wheel",
+		"http://www.google.com/search?q=barrow",
+		"http://www.google.com/search?q=glazed with rain",
+		"http://www.google.com/search?q=water",
+		"http://www.google.com/search?q=beside the white",
+		"http://www.google.com/search?q=chickens."
+		];
+					
+		var i = 0;
+		var intervalID;
+		
+		function init() {
+			intervalID = setInterval("redirect()", 5000);
+		}
+		
+		function redirect() {
+			document.getElementById('frame').src = sites[i];
+			if(i == (sites.length - 1)) {
+				i=0;
+			} else {
+				i++;
+			}
+		}
+	
+	</script>
+
+  </head>
+
+  <body onload="init();">
+  
+  <div>
+  	<iframe id="frame" scrolling="no"></iframe>
+  </div>
+  
+  </body>
+</html>
