@@ -22,7 +22,7 @@
 		</nav>
 	<div class="container">
 		<header>
-			<h1>Searching For Poetry</h1>
+			<h1><%= link_to "Searching For Poetry", '/' %></h1>
 			
 		</header>
 		
@@ -30,7 +30,11 @@
 		<%= yield %>
 		</section>
 		
-		<footer>		
+		<footer class="bottom-links">
+			<ul>
+			<li><%= link_to "Artist's Statement", '/statement' %></li>
+			<li><%= link_to "Contact", '/contact' %></li>
+			</ul>
 		</footer>	
 	</div>
 	

@@ -1,6 +1,8 @@
 Searchingforpoetry::Application.routes.draw do
   root :to => "pages#home"
   
+  match '/statement', :to => 'pages#statement'
+  match '/contact' , :to => 'pages#contact'
   match '/shebeingbrand', :to => 'poems#shebeingbrand'
   match '/theredwheelbarrow', :to => 'poems#theredwheelbarrow'
   
