@@ -4,6 +4,7 @@
 
 body {
 	background:#3c5a76 url('/images/home_bg.png') no-repeat center;
+	padding-bottom:60px;   /* Height of the footer */
 }
 
 header {
@@ -27,6 +28,9 @@ section {
 	padding: 20px;
 	background: #fff;
 }
+footer {
+	text-align: center;
+}
 
 /* Links */
 
@@ -47,7 +51,6 @@ a:visited {
 /* navigation */
 nav {
 	float: right;
-	background: white;
 	padding: 0 0.7em;
 	white-space: nowrap;	
 }
