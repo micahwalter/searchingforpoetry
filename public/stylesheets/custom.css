@@ -2,6 +2,16 @@
 	width: 710px;
 }
 
+textarea {
+    height: 250px;
+    padding: 5px;
+    width: 660px;
+    max-width: 660px;
+}
+
+h4 {
+	margin-bottom:0;
+}
 body {
 	background:#3c5a76 url('/images/home_bg.png') no-repeat center;
 	padding-bottom:60px;   /* Height of the footer */
