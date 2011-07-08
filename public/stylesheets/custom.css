@@ -1,5 +1,5 @@
 .container {
-	width: 710px;
+	width: 950px;
 }
 
 textarea {
@@ -15,7 +15,9 @@ h4 {
 body {
 	background:#3c5a76 url('/images/home_bg.png') no-repeat center;
 	padding-bottom:60px;   /* Height of the footer */
+	color:#fff;
 }
+
 
 header {
 	padding-top:20px;
@@ -52,7 +54,7 @@ section {
 	margin-top: 1em;
 	font-size: 120%;
 	padding: 20px;
-	background: #fff;
+	/*background: #fff;*/
 }
 footer {
 	text-align: center;
