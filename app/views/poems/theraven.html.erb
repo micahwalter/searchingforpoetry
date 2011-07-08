@@ -1,0 +1,155 @@
+   	<style type="text/css">
+	* {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#frame {
+		position: absolute;
+		border-width: 0px;
+		height: 100%;
+		width: 100%;
+	}
+	</style>
+	<script type="text/javascript">
+	
+		
+		var sites = ["http://www.bing.com/search?q=Once upon a midnight dreary, while I pondered, weak and weary,", 
+		"http://www.bing.com/search?q=Over many a quaint and curious volume of forgotten lore,", 
+		"http://www.bing.com/search?q=While I nodded, nearly napping, suddenly there came a tapping,", 
+		"http://www.bing.com/search?q=As of some one gently rapping, rapping at my chamber door.", 
+		"http://www.bing.com/search?q='Tis some visiter,' I muttered, 'tapping at my chamber door —", 
+		"http://www.bing.com/search?q=Only this, and nothing more.'",     
+		"http://www.bing.com/search?q=Ah, distinctly I remember it was in the bleak December,", 
+		"http://www.bing.com/search?q=And each separate dying ember wrought its ghost upon the floor.", 
+		"http://www.bing.com/search?q=Eagerly I wished the morrow; — vainly I had tried to borrow ",
+		"http://www.bing.com/search?q=From my books surcease of sorrow — sorrow for the lost Lenore —", 
+		"http://www.bing.com/search?q=For the rare and radiant maiden whom the angels name Lenore — ",
+		"http://www.bing.com/search?q=Nameless here for evermore.",     
+		"http://www.bing.com/search?q=And the silken sad uncertain rustling of each purple curtain", 
+		"http://www.bing.com/search?q=Thrilled me — filled me with fantastic terrors never felt before;", 
+		"http://www.bing.com/search?q=So that now, to still the beating of my heart, I stood repeating ",
+		"http://www.bing.com/search?q='Tis some visiter entreating entrance at my chamber door — ",
+		"http://www.bing.com/search?q=Some late visiter entreating entrance at my chamber door; —", 
+		"http://www.bing.com/search?q=This it is, and nothing more.'",     
+		"http://www.bing.com/search?q=Presently my soul grew stronger; hesitating then no longer,",
+		"http://www.bing.com/search?q='Sir,' said I, 'or Madam, truly your forgiveness I implore;", 
+		"http://www.bing.com/search?q=But the fact is I was napping, and so gently you came rapping,", 
+		"http://www.bing.com/search?q=And so faintly you came tapping, tapping at my chamber door,", 
+		"http://www.bing.com/search?q=That I scarce was sure I heard you' — here I opened wide the door; ——", 
+		"http://www.bing.com/search?q=Darkness there, and nothing more.",     
+		"http://www.bing.com/search?q=Deep into that darkness peering, long I stood there wondering, fearing,", 
+		"http://www.bing.com/search?q=Doubting, dreaming dreams no mortal ever dared to dream before;", 
+		"http://www.bing.com/search?q=But the silence was unbroken, and the darkness gave no token,", 
+		"http://www.bing.com/search?q=And the only word there spoken was the whispered word, 'Lenore!'", 
+		"http://www.bing.com/search?q=This I whispered, and an echo murmured back the word, 'Lenore!'",
+		"http://www.bing.com/search?q=Merely this, and nothing more.",     
+		"http://www.bing.com/search?q=Then into the chamber turning, all my soul within me burning,", 
+		"http://www.bing.com/search?q=Soon I heard again a tapping somewhat louder than before.", 
+		"http://www.bing.com/search?q='Surely,' said I, 'surely that is something at my window lattice;", 
+		"http://www.bing.com/search?q=Let me see, then, what thereat is, and this mystery explore —", 
+		"http://www.bing.com/search?q=Let my heart be still a moment and this mystery explore;—", 
+		"http://www.bing.com/search?q='Tis the wind, and nothing more!'",     
+		"http://www.bing.com/search?q=Open here I flung the shutter, when, with many a flirt and flutter,", 
+		"http://www.bing.com/search?q=In there stepped a stately raven of the saintly days of yore;", 
+		"http://www.bing.com/search?q=Not the least obeisance made he; not an instant stopped or stayed he;", 
+		"http://www.bing.com/search?q=But, with mien of lord or lady, perched above my chamber door —", 
+		"http://www.bing.com/search?q=Perched upon a bust of Pallas just above my chamber door —", 
+		"http://www.bing.com/search?q=Perched, and sat, and nothing more.",     
+		"http://www.bing.com/search?q=Then this ebony bird beguiling my sad fancy into smiling,", 
+		"http://www.bing.com/search?q=By the grave and stern decorum of the countenance it wore,", 
+		"http://www.bing.com/search?q='Though thy crest be shorn and shaven, thou,' I said, 'art sure no craven,", 
+		"http://www.bing.com/search?q=Ghastly grim and ancient raven wandering from the Nightly shore —", 
+		"http://www.bing.com/search?q=Tell me what thy lordly name is on the Night's Plutonian shore!'", 
+		"http://www.bing.com/search?q=Quoth the raven, 'Nevermore.'",     
+		"http://www.bing.com/search?q=Much I marvelled this ungainly fowl to hear discourse so plainly,", 
+		"http://www.bing.com/search?q=Though its answer little meaning — little relevancy bore;", 
+		"http://www.bing.com/search?q=For we cannot help agreeing that no sublunary being", 
+		"http://www.bing.com/search?q=Ever yet was blessed with seeing bird above his chamber door —", 
+		"http://www.bing.com/search?q=Bird or beast upon the sculptured bust above his chamber door,", 
+		"http://www.bing.com/search?q=With such name as 'Nevermore.'",     
+		"http://www.bing.com/search?q=But the raven, sitting lonely on the placid bust, spoke only", 
+		"http://www.bing.com/search?q=That one word, as if his soul in that one word he did outpour.", 
+		"http://www.bing.com/search?q=Nothing farther then he uttered — not a feather then he fluttered —", 
+		"http://www.bing.com/search?q=Till I scarcely more than muttered, 'Other friends have flown before —", 
+		"http://www.bing.com/search?q=On the morrow he will leave me, as my hopes have flown before.'", 
+		"http://www.bing.com/search?q=Quoth the raven, 'Nevermore.'",     
+		"http://www.bing.com/search?q=Wondering at the stillness broken by reply so aptly spoken,", 
+		"http://www.bing.com/search?q='Doubtless,' said I, 'what it utters is its only stock and store,", 
+		"http://www.bing.com/search?q=Caught from some unhappy master whom unmerciful Disaster", 
+		"http://www.bing.com/search?q=Followed fast and followed faster — so, when Hope he would adjure,",
+		"http://www.bing.com/search?q=Stern Despair returned, instead of the sweet Hope he dared adjure —", 
+		"http://www.bing.com/search?q=That sad answer, 'Nevermore!'",     
+		"http://www.bing.com/search?q=But the raven still beguiling all my sad soul into smiling,", 
+		"http://www.bing.com/search?q=Straight I wheeled a cushioned seat in front of bird, and bust and door;", 
+		"http://www.bing.com/search?q=Then upon the velvet sinking, I betook myself to linking", 
+		"http://www.bing.com/search?q=Fancy unto fancy, thinking what this ominous bird of yore —", 
+		"http://www.bing.com/search?q=What this grim, ungainly, ghastly, gaunt, and ominous bird of yore", 
+		"http://www.bing.com/search?q=Meant in croaking 'Nevermore.'",     
+		"http://www.bing.com/search?q=This I sat engaged in guessing, but no syllable expressing", 
+		"http://www.bing.com/search?q=To the fowl whose fiery eyes now burned into my bosom's core;", 
+		"http://www.bing.com/search?q=This and more I sat divining, with my head at ease reclining", 
+		"http://www.bing.com/search?q=On the cushion's velvet lining that the lamplight gloated o'er,", 
+		"http://www.bing.com/search?q=But whose velvet violet lining with the lamplight gloating o'er,", 
+		"http://www.bing.com/search?q=She shall press, ah, nevermore!",     
+		"http://www.bing.com/search?q=Then, methought, the air grew denser, perfumed from an unseen censer", 
+		"http://www.bing.com/search?q=Swung by angels whose faint foot-falls tinkled on the tufted floor.", 
+		"http://www.bing.com/search?q='Wretch,' I cried, 'thy God hath lent thee — by these angels he hath sent thee",
+		"http://www.bing.com/search?q=Respite — respite and Nepenthe from thy memories of Lenore!",
+		"http://www.bing.com/search?q=Let me quaff this kind Nepenthe and forget this lost Lenore!'", 
+		"http://www.bing.com/search?q=Quoth the raven, 'Nevermore.'",     
+		"http://www.bing.com/search?q='Prophet!' said I, 'thing of evil! — prophet still, if bird or devil! —", 
+		"http://www.bing.com/search?q=Whether Tempter sent, or whether tempest tossed thee here ashore,", 
+		"http://www.bing.com/search?q=Desolate, yet all undaunted, on this desert land enchanted —", 
+		"http://www.bing.com/search?q=On this home by Horror haunted — tell me truly, I implore —", 
+		"http://www.bing.com/search?q=Is there — is there balm in Gilead? — tell me — tell me, I implore!'", 
+		"http://www.bing.com/search?q=Quoth the raven, 'Nevermore.'",     
+		"http://www.bing.com/search?q='Prophet!' said I, 'thing of evil! — prophet still, if bird or devil!", 
+		"http://www.bing.com/search?q=By that Heaven that bends above us — by that God we both adore —", 
+		"http://www.bing.com/search?q=Tell this soul with sorrow laden if, within the distant Aidenn,", 
+		"http://www.bing.com/search?q=It shall clasp a sainted maiden whom the angels name Lenore —", 
+		"http://www.bing.com/search?q=Clasp a rare and radiant maiden whom the angels name Lenore.'", 
+		"http://www.bing.com/search?q=Quoth the raven, 'Nevermore.'",     
+		"http://www.bing.com/search?q='Be that word our sign of parting, bird or fiend!' I shrieked, upstarting —", 
+		"http://www.bing.com/search?q='Get thee back into the tempest and the Night's Plutonian shore!",
+		"http://www.bing.com/search?q=Leave no black plume as a token of that lie thy soul hath spoken!", 
+		"http://www.bing.com/search?q=Leave my loneliness unbroken! — quit the bust above my door!", 
+		"http://www.bing.com/search?q=Take thy beak from out my heart, and take thy form from off my door!'", 
+		"http://www.bing.com/search?q=Quoth the raven, 'Nevermore.'",     
+		"http://www.bing.com/search?q=And the raven, never flitting, still is sitting, still is sitting", 
+		"http://www.bing.com/search?q=On the pallid bust of Pallas just above my chamber door;", 
+		"http://www.bing.com/search?q=And his eyes have all the seeming of a demon that is dreaming,", 
+		"http://www.bing.com/search?q=And the lamp-light o'er him streaming throws his shadow on the floor;", 
+		"http://www.bing.com/search?q=And my soul from out that shadow that lies floating on the floor", 
+		"http://www.bing.com/search?q=Shall be lifted — nevermore!",
+		];
+					
+		var i = 0;
+		var intervalID;
+		
+		function init() {
+			intervalID = setInterval("redirect()", 5000);
+		}
+		
+		function redirect() {
+			document.getElementById('frame').src = sites[i];
+			if(i == (sites.length - 1)) {
+				i=0;
+			} else {
+				i++;
+			}
+		}
+	
+	</script>
+
+  </head>
+
+  <body onload="init();">
+  
+  <div>
+  	<iframe id="frame" scrolling="no"></iframe>
+  </div>
+ 
+  </body>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(66404637); }catch(e){}</script>

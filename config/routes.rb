@@ -5,6 +5,7 @@ Searchingforpoetry::Application.routes.draw do
   match '/contact' , :to => 'pages#contact'
   match '/shebeingbrand', :to => 'poems#shebeingbrand'
   match '/theredwheelbarrow', :to => 'poems#theredwheelbarrow'
+  match '/theraven', :to => 'poems#theraven'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

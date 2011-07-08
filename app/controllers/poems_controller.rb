@@ -9,4 +9,7 @@ class PoemsController < ApplicationController
     @title = "The Red Wheelbarrow"
   end
   
+  def theraven
+    @title = "The Raven"
+  end
 end
